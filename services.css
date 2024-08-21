@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/* NAV BAR */
+
+nav {
+    width: 95%;
+    height: 7%;
+    padding-top: 30px;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav span {
+    color: #ffa500;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 3px 15px;
+}
+
+nav ul li:nth-last-child(1) {
+    background: #000;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+nav ul li:nth-last-child(1) a {
+    color: white;
+}
+
+nav ul li:nth-last-child(1) a::after {
+    background-color: black;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+nav ul a {
+    width: max-content;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+    margin: 100px auto;
+}
+
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2.5px;
+    width: 100%;
+    left: 0;
+    background-color: orange;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+}
+
+nav ul a:hover::after {
+    color: white;
+    transform: scale(1);
+}
+
+nav .bi-three-dots {
+    display: none;
+}
+
+/* NAV BAR CLOSE  */
+
+h2 {
+    text-align: center;
+    color: rgb(32, 34, 70);
+    font-size: 45px;
+    margin-top: 90px;
+}
+
+img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.cont{
+    height: 400px;
+    width: 90%;
+    margin-top: 70px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.cont .img{
+    height: 400px;
+    width: 30%;
+    background: url(Images/Bliss-Air-Ticketing.png) no-repeat;
+    background-size: 250px;
+    background-position: center;
+    cursor: pointer;
+    transition: 1s;
+    /* border: 1px solid black; */
+}
+.cont .img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.cont .img .txt{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(32, 34, 70);
+}
+.cont .img1{
+    height: 400px;
+    width: 30%;
+    background: url(Images/Bliss-Travel-Insurance.png) no-repeat;
+    background-size: 250px;
+    background-position: center;
+    transition: 1s;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.cont .img1:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.cont .img1 .txt{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(32, 34, 70);
+}
+.cont .img2{
+    height: 400px;
+    width: 30%;
+    background: url(Images/Hajj-Umrah-Packages.png) no-repeat;
+    background-size: 250px;
+    background-position: center;
+    transition: 1s;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.cont .img2:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.cont .img2 .txt{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(32, 34, 70);
+}
+.contx{
+    height: 400px;
+    width: 90%;
+    margin-top: 90px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.contx .img{
+    height: 400px;
+    width: 30%;
+    background: url(Images/Honeymooners-packages.png) no-repeat;
+    background-size: 250px;
+    background-position: center;
+    transition: 1s;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.contx .img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.contx .img .txt{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(32, 34, 70);
+}
+.contx .img1{
+    height: 400px;
+    width: 30%;
+    background: url(Images/Worldwide-Hotel-Reservations.png) no-repeat;
+    background-size: 250px;
+    background-position: center;
+    transition: 1s;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.contx .img1:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.contx .img1 .txt{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(32, 34, 70);
+}
+.contx .img2{
+    height: 400px;
+    width: 30%;
+    background: url(Images/Bliss-ground-services.png) no-repeat;
+    background-size: 250px;
+    background-position: center;
+    transition: 1s;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.contx .img2:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.contx .img2 .txt{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(32, 34, 70);
+}
+.contx .img3{
+    height: 400px;
+    width: 30%;
+    background: url(Images/Bliss-travel-consultancy.png) no-repeat;
+    background-size: 250px;
+    background-position: center;
+    transition: 1s;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.contx .img3:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.contx .img3 .txt{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(32, 34, 70);
+}
+.contx .img4{
+    height: 400px;
+    width: 30%;
+    background: url(Images/Bliss-Conferences.png) no-repeat;
+    background-size: 250px;
+    background-position: center;
+    transition: 1s;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.contx .img4:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.contx .img4 .txt{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(32, 34, 70);
+}
+.contx .img5{
+    height: 400px;
+    width: 30%;
+    background: url(Images/custom-made-travel-packages.png) no-repeat;
+    background-size: 250px;
+    background-position: center;
+    transition: 1s;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.contx .img5:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.contx .img5 .txt{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(32, 34, 70);
+}
+.contx .img5  a{
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    background: #1B4242;
+    height: 300px;
+  }
+  
+  footer .txt h2 {
+    color: white;
+  }
+  footer .txt p {
+    color: white;
+    padding-top: 20px;
+  }
+  
+  footer .contact button {
+    color: white;
+    border: 2px solid white;
+    border-radius: 60px;
+    background: #1B4242;
+    cursor: pointer;
+    padding: 15px;
+    transition: .3s linear;
+    font-size: 20px;
+    font-weight: 500;
+    width: 130%;
+  }
+  
+  footer .contact button:hover {
+    background: rgb(168, 179, 240);
+  }
